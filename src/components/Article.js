@@ -10,10 +10,9 @@ function emojiMinutes (minutes) {
         defaultEmoji = "🍱"
     }
 
-    for(let x = 0; x < minutes; x + defaultInterval) {
+    for(let x = 0; x < minutes; x += defaultInterval) {
             emojis += `${defaultEmoji}`
     }
-
     return emojis
 }
 
